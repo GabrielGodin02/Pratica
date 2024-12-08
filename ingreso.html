@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Gestión de Proyectos</title>
+    <link rel="stylesheet" href="panel.css">
+    <!-- FullCalendar CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.2/main.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Centro de Gestión de Proyectos</h1>
+        </header>
+        <main>
+            <section class="kanban">
+                <h2>Tablero Kanban</h2>
+                <div class="kanban-board">
+                    <div class="kanban-column">
+                        <h3>Por Hacer</h3>
+                        <ul id="todo-list"></ul>
+                        <input type="text" id="new-task" placeholder="Nueva tarea">
+                        <button id="add-task">Agregar Tarea</button>
+                    </div>
+                    <div class="kanban-column">
+                        <h3>En Progreso</h3>
+                        <ul id="in-progress-list"></ul>
+                    </div>
+                    <div class="kanban-column">
+                        <h3>Completado</h3>
+                        <ul id="done-list"></ul>
+                    </div>
+                </div>
+            </section>
+            <section class="chat">
+                <h2>Chat de Equipo</h2>
+                <div id="chat-box"></div>
+                <input type="text" id="chat-input" placeholder="Escribe un mensaje">
+                <button id="send-chat">Enviar</button>
+            </section>
+            <section class="documentos">
+                <h2>Documentos Compartidos</h2>
+                <ul id="document-list"></ul>
+                <input type="file" id="upload-document">
+                <button id="upload-button">Subir Documento</button>
+            </section>
+            <section class="calendario">
+                <h2>Calendario de Proyectos</h2>
+                <div id="calendar"></div>
+            </section>
+            <section class="actividades">
+                <h2>Actividades Recientes</h2>
+                <ul id="activity-list"></ul>
+            </section>
+        </main>
+    </div>
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

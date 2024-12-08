@@ -1,0 +1,97 @@
+body {
+    background: linear-gradient(to right, #5c4b8a, #37256a); /* Gradiente de fondo */
+    font-family: 'Arial', sans-serif; /* Familia de fuentes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura de la ventana gráfica */
+    margin: 0; /* Sin margen */
+    color: #333; /* Color del texto */
+}
+
+/* Contenedor del formulario */
+.formulario {
+    background: #f9f9f9; /* Fondo claro */
+    padding: 30px; /* Relleno interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra */
+    max-width: 500px; /* Ancho máximo */
+    margin: auto; /* Centrar el formulario */
+    margin-top: 50px; /* Margen superior */
+    animation: slideIn 0.5s ease-out; /* Animación de entrada */
+    text-align: center;
+}
+
+/* Animación de entrada */
+@keyframes slideIn {
+    from {
+        opacity: 0; /* Opacidad inicial */
+        transform: translateY(-20px); /* Posición inicial */
+    }
+    to {
+        opacity: 1; /* Opacidad final */
+        transform: translateY(0); /* Posición final */
+    }
+}
+
+/* Estilos para los inputs de .nombresyapellidos y .identyFecha */
+.formulario .nombresyapellidos input,
+.formulario .identyFecha input,
+.formulario .inf_login input {
+    width: calc(50% - 12px); /* Ancho con margen */
+    padding: 12px; /* Relleno interno */
+    margin: 10px 6px; /* Márgenes */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transiciones */
+}
+
+/* Cambios al enfocar los inputs */
+.formulario .nombresyapellidos input:focus,
+.formulario .identyFecha input:focus,
+.formulario .inf_login input:focus {
+    border-color: #5c4b8a; /* Color del borde */
+    box-shadow: 0 0 5px rgba(92, 75, 138, 0.5); /* Sombra */
+    outline: none; /* Sin contorno */
+}
+
+/* Alinear los inputs */
+.nombresyapellidos, .identyFecha, .inf_login {
+    display: flex; /* Mostrar como flex */
+    justify-content: space-between; /* Espacio entre elementos */
+}
+
+/* Alinear verticalmente los inputs */
+.inf_login input {
+    width: 100%; /* Ancho completo */
+    margin: 10px 0; /* Margen vertical */
+}
+
+/* Estilos adicionales para el formulario */
+.formulario form {
+    display: flex; /* Mostrar como flex */
+    flex-direction: column; /* Dirección de columna */
+}
+
+/* Estilo para el botón */
+.formulario button  {
+    width: 100%; /* Ancho completo */
+    padding: 12px; /* Relleno interno */
+    background-color: #5c4b8a; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Manito al pasar */
+    font-size: 16px; /* Tamaño de fuente */
+    margin-top: 20px; /* Margen superior */
+    transition: background-color 0.3s; /* Transición de color */
+}
+a{
+    margin: auto;
+    margin-top: 8px;
+}
+
+/* Cambios al pasar el mouse sobre el botón */
+.formulario button:hover {
+    background-color: #37256a; /* Color de fondo al pasar el mouse */
+}

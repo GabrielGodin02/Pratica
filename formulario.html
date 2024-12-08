@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="fomulario.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="formulario">
+        <h1>Datos Básicos</h1>
+        <form id="registroForm">
+             <div class="nombresyapellidos">
+               <input type="text" placeholder="Nombres" name="nombres" required>
+               <input type="text" placeholder="Apellidos" name="apellidos" required>
+             </div>
+             <div class="identyFecha">
+               <input type="number" placeholder="Identificación" name="ident" required>
+               <input type="date" placeholder="Fecha Nacimiento" name="fecha" required>
+            </div>
+            <div class="inf_login">
+               <input type="email" placeholder="Correo" name="correo" required>
+               <input type="password" placeholder="Contraseña" name="contraseña" required>
+            </div>
+              <button type="submit">Registrar</button>
+               <a href="index.html">Regresar</a>
+       </form>
+      
+    </div>
+</body>
+</html>
